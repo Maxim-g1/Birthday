@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+.body {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+    
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+
+.wrapper{
+    align-items: center;
+    font-family: 'Lobster', sans-serif;
+    min-height: 100%;
+   text-align: center;
+   background: linear-gradient(yellow, purple);
+    color: darkred;
+}
+
+
+.title {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    animation: zoomtext 5s;
+}
+.img__flowers__top {
+    width: 370px;
+    display: flex;
+    animation: rotate 40s infinite linear;    
+}
+.img__pozdravlenie {
+    width:  650px;
+    border-radius: 15px;
+    border: 2px;
+}
+.subtitle {
+    margin-top: 20px;
+    animation: marquee 3s linear ;
+}
+
+.block__pozdravlenie{
+    text-align: center;
+    display: flex;
+    
+}
+
+@keyframes rotate {
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes zoomtext {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+@keyframes marquee {
+    0% {
+      transform: translateY(200%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
